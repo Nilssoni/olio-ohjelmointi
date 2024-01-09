@@ -2,12 +2,12 @@
 
 using namespace std;
 void tarkista();
-int num;
+int num,x;
 
 int main()
 {
-    num=27;
-    tarkista();
+    num=x;
+    tarkista(int num);
 
     return 0;
 }
