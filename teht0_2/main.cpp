@@ -1,14 +1,13 @@
 #include <iostream>
 
 using namespace std;
-void tarkista();
-int num,x;
+void tarkista(int num);
+
 
 int main()
 {
-    num=x;
-    tarkista(int num);
-
+    int num=27;
+    tarkista(num);
     return 0;
 }
 
