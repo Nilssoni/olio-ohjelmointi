@@ -2,15 +2,21 @@
 #include <cstdlib>
 #include <ctime>
 
+void random(int secret);
+
 using namespace std;
 
 int main()
 {
-    int secret, answer;
-
+    int secret;
     srand (time(NULL));
     secret = rand() % 20;
+    random(secret);
+    return 0;
+}
 
+void random(int secret){
+    int answer;
     do{
         cout << "Guess the number (1 to 20): ";
         cin >> answer;
@@ -24,6 +30,4 @@ int main()
     }
     while(secret != answer);
     cout << "Congratulations!" << endl;
-
-    return 0;
 }
