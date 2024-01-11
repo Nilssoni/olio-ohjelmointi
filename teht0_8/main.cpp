@@ -7,9 +7,7 @@ void sarja(int sluku);
 int main() {
     int sluku;
     cin >> sluku;
-
     srand(sluku);
-
 
     sarja(sluku);
 
