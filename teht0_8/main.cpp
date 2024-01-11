@@ -7,16 +7,21 @@ void sarja(int sluku);
 int main() {
     int sluku;
     cin >> sluku;
+<<<<<<< HEAD
     srand(sluku);
 
+=======
+>>>>>>> origin
     sarja(sluku);
 
     return 0;
 }
 
 void sarja(int sluku) {
+    srand(sluku);
+    int satunnaisluku;
     for(int i = 0; i < 5; i++){
-        int satunnaisluku = rand() % 20;
+        satunnaisluku = rand() % 20;
         cout << satunnaisluku << endl;
     }
 }
