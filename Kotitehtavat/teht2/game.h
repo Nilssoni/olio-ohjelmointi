@@ -1,17 +1,14 @@
 #ifndef GAME_H
 #define GAME_H
-
 #include <iostream>
+using namespace std;
 
 class Game
 {
     public:
-        Game();
+        Game(int a);
         ~Game();
         void play();
-        int getPlayerGuess() const;
-        int getMaxNumber() const;
-        void setMaxNumber(int newMaxNumber);
 
     private:
         int maxNumber;

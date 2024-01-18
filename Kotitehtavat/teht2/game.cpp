@@ -1,56 +1,45 @@
 #include "game.h"
+#include <time.h>
 
-Game::Game()
+Game::Game(int maxNum)
 {
+    maxNumber = maxNum;
+    cout << "GAME CONSTRUCTOR: object initialized with " << maxNumber << " as a maxinum value" << endl;
+}
 
+Game::~Game()
+{
+    cout << "GAME DESTRUCTOR: object cleared from stack memory" << endl;
 }
 
 void Game::play()
 {
+    numOfGuesses = 0;
+    srand (time(NULL));
+    randomNumber = rand() % maxNumber + 1;
 
-}
+    while (playerGuess != randomNumber) {
+        cout << "Give your guess between 1-" << maxNumber << endl;
+        cin >> playerGuess;
+        numOfGuesses++;
 
-int Game::getPlayerGuess() const
-{
+        if(playerGuess < randomNumber){
+            cout << "Your guess is too small" << endl;
+        }
+        else if (playerGuess > randomNumber){
+            cout << "Your guess is too big" << endl;
+        }
+    }
 
-}
+    printGameResult();
 
-int Game::getMaxNumber() const
-{
-
-}
-
-void Game::setMaxNumber(int newMaxNumber)
-{
-
-}
-
-void Game::setPlayerGuess(int newPlayerGuess)
-{
-    playerGuess = newPlayerGuess;
-}
-
-int Game::getRandomNumber() const
-{
-    return randomNumber;
-}
-
-void Game::setRandomNumber(int newRandomNumber)
-{
-    randomNumber = newRandomNumber;
-}
-
-int Game::getNumOfGuesses() const
-{
-    return numOfGuesses;
-}
-
-void Game::setNumOfGuesses(int newNumOfGuesses)
-{
-    numOfGuesses = newNumOfGuesses;
 }
 
 void Game::printGameResult()
 {
-
+    cout << "Your guess is right = " << randomNumber << endl;
+    cout << "Your guessed the right answer = " << randomNumber << " with " << numOfGuesses << " guesses" << endl;
 }
+
+
+
