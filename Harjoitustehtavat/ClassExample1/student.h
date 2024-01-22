@@ -12,6 +12,7 @@ private:
     string lname;
 public:
     Student();
+    ~Student();
     string getFname() const;
     void setFname(const string &newFname);
     string getLname() const;

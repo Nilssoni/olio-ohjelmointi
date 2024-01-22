@@ -25,4 +25,12 @@ void Student::studentInfo()
     cout << "Etunimeni on " << fname << " sukunimeni on " << lname << endl;
 }
 
-Student::Student() {}
+Student::Student()
+{
+    cout << "Student luokan (Constructor) kutsuttiin!" << endl;
+}
+
+Student::~Student()
+{
+    cout << "Student luokan (Destructor) kutsuttiin!" << endl;
+}
