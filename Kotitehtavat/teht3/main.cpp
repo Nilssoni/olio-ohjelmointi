@@ -6,14 +6,12 @@ using namespace std;
 
 int main()
 {
-    Chef cook("Gordon Ramsay");
+    Chef cook("Jyrki");
+    ItalianChef cook2("Mario");
+
     cook.makeSalad();
+    cook2.makePasta();
     cook.makeSoup();
-    Chef cook2("Anthony Bourdain");
-    cook2.makeSalad();
-    cook2.makeSoup();
-
-
 //    ItalianChef cook2("Valimaki");
 //    cook2.makePasta();
     return 0;
