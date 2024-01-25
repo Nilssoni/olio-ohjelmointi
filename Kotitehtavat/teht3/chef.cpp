@@ -8,6 +8,7 @@ Chef::Chef(string Chefname)
     cout << "Chef " << name << " konstruktori" << endl;
 
 }
+
 Chef::~Chef()
 {
     cout << "Chef " << name << " destruktori" << endl;
