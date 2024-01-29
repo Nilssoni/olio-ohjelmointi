@@ -6,10 +6,12 @@ CONFIG -= qt
 SOURCES += \
         animal.cpp \
         cat.cpp \
+        dog.cpp \
         main.cpp \
         person.cpp
 
 HEADERS += \
     animal.h \
     cat.h \
+    dog.h \
     person.h

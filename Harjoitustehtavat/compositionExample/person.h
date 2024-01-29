@@ -12,6 +12,9 @@ private:
     string fname;
     string lname;
     Cat objectCat1;
+    // luodaan Cat luokan olio
+    // eli kyseessä vahva kooste = composition
+    Dog objectDog1;
 public:
     Person();
     Person(string fn, string ln);
@@ -20,6 +23,7 @@ public:
     void setLname(const string &newLname);
     void personInfo();
     void setCatData();
+    void setDogData();
 };
 
 #endif // PERSON_H
