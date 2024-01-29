@@ -16,5 +16,15 @@ int main()
     objectStudent1.setFname("Teppo");
     objectStudent1.setLname("Testi");
     objectStudent1.studentInfo();
+
+    Student objectStudent2("Aino", "Joki");
+    objectStudent2.studentInfo();
+
+//  luodaan Student luokasta olio kekoon
+    Student *objectstudent3;
+    objectstudent3 = new Student ("Liisa", "Virta");
+    objectstudent3->studentInfo();
+    delete objectstudent3;
+    objectstudent3=nullptr;
     return 0;
 }
