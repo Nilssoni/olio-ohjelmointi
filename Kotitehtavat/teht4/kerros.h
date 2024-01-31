@@ -4,12 +4,11 @@
 #include "asunto.h"
 
 
-
 class Kerros
 {
 public:
     Kerros();
-    void maaritaAsunnot();
+    virtual void maaritaAsunnot();
     double laskeKulutus(double);
     Asunto as1;
     Asunto as2;
