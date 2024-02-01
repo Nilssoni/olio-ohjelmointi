@@ -11,8 +11,8 @@ public:
     Katutaso();
     virtual void maaritaAsunnot() override;
     double laskeKulutus(double);
-    // Asunto as1;
-    // Asunto as2;
+    Asunto as1;
+    Asunto as2;
 
 };
 
