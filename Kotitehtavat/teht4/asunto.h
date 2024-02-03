@@ -11,7 +11,7 @@ public:
     int asukasMaara;
     int neliot;
     void maarita(int, int);
-    double laskeKulutus(double);
+    double laskeKulutus(double hinta);
 };
 
 #endif // ASUNTO_H

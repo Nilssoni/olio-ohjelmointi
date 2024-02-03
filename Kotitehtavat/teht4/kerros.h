@@ -3,7 +3,6 @@
 
 #include "asunto.h"
 
-
 class Kerros
 {
 public:
