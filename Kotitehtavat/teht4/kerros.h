@@ -8,6 +8,7 @@ class Kerros
 {
 public:
     Kerros();
+    ~Kerros();
     virtual void maaritaAsunnot();
     double laskeKulutus(double);
     Asunto as1;

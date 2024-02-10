@@ -2,7 +2,12 @@
 
 Asunto::Asunto()
 {
-    cout << "asunto luotu" << endl;
+    cout << "Asunto luotu" << endl;
+}
+
+Asunto::~Asunto()
+{
+    cout << "Asunto destruktori" << endl;
 }
 
 void Asunto::maarita(int a, int b)

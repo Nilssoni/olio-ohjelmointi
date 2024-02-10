@@ -6,6 +6,11 @@ Kerros::Kerros()
     cout << "Kerros luotu" << endl;
 }
 
+Kerros::~Kerros()
+{
+    cout << "Kerros destruktori" << endl;
+}
+
 void Kerros::maaritaAsunnot()
 {
     cout << "Maaritetaan 4 kpl kerroksen asuntoja" << endl;

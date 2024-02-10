@@ -22,5 +22,6 @@ int main()
     double kokonaisKulutus2 = kerrosObj.laskeKulutus(1);
 
     Kerrostalo kerrostaloObj;
+    double kokonaisKulutus3 = kerrostaloObj.laskeKulutus(1);
     return 0;
 }

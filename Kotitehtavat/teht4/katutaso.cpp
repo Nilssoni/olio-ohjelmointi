@@ -5,6 +5,11 @@ Katutaso::Katutaso()
     cout << "Katutaso luotu" << endl;
 }
 
+Katutaso::~Katutaso()
+{
+    cout << "Katutaso destruktori" << endl;
+}
+
 void Katutaso::maaritaAsunnot()
 {
     cout << "Maaritetaan 2 kpl katutason asuntoja" << endl;

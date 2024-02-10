@@ -9,6 +9,7 @@ class Katutaso : public Kerros
 {
 public:
     Katutaso();
+    ~Katutaso();
     virtual void maaritaAsunnot() override;
     double laskeKulutus(double);
     Asunto as1;
