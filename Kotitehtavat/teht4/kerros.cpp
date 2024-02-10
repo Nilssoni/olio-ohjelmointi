@@ -13,7 +13,8 @@ Kerros::~Kerros()
 
 void Kerros::maaritaAsunnot()
 {
-    cout << "Maaritetaan 4 kpl kerroksen asuntoja" << endl;
+    cout << "Maaritetaan katutasolta perittyja asuntoja" << endl;
+    cout << "Maaritetaan 4 kpl asuntoja" << endl;
     as1.maarita(2,100);
     as2.maarita(2,100);
     as3.maarita(2,100);
@@ -23,13 +24,7 @@ void Kerros::maaritaAsunnot()
 
 double Kerros::laskeKulutus(double hinta)
 {
-    double kulutus1 = as1.laskeKulutus(hinta);
-    double kulutus2 = as2.laskeKulutus(hinta);
-    double kulutus3 = as3.laskeKulutus(hinta);
-    double kulutus4 = as4.laskeKulutus(hinta);
-
-    double kokonaisKulutus2 = kulutus1 + kulutus2 + kulutus3 + kulutus4;
-
-    cout << "Katutason kulutus, kun hinta = 1 on " << kokonaisKulutus2 <<  endl;
-    return kokonaisKulutus2;
+    int kokonaiskulutus = as1.laskeKulutus(1) + as2.laskeKulutus(1) + as3.laskeKulutus(1) + as4.laskeKulutus(1);
+    return kokonaiskulutus;
 }
+
