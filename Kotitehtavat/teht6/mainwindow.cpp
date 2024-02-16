@@ -19,7 +19,7 @@ void MainWindow::on_btnCount_clicked()
     x++;
     QString s = QString::number(x);
     qDebug() << "Pressed the Count button";
-    ui->labelResult->setText("Button pressed: " +s+ " times.");
+    ui->lineCounter->setText(s);
 }
 
 
@@ -27,5 +27,4 @@ void MainWindow::on_btnReset_clicked()
 {
     x = 0;
     qDebug() << "Pressed the Reset button";
-
 }

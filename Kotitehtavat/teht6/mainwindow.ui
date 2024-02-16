@@ -50,25 +50,19 @@
      <string>Reset</string>
     </property>
    </widget>
-   <widget class="QLabel" name="labelResult">
+   <widget class="QLineEdit" name="lineCounter">
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>50</y>
+      <y>40</y>
       <width>131</width>
-      <height>41</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>18</pointsize>
      </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
   </widget>
