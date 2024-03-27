@@ -12,7 +12,50 @@ router.get('/',function(request, response){
             response.json(result);
         }
     });
+});
 
+router.get('/:username', function(request,response){
+    student.getOneStudent(request.params.username, function(err, result){
+        if(err){
+            response.send(err);
+        }
+        else{
+            console.log(result);
+            response.json(result[0]);
+        }
+    })
+});
+
+router.post('/',function(request, response){
+    student.addStudent(request.body, function(err, result){
+        if(err){
+            response.send(err);
+        }else{
+            response.json(result);
+        }
+    });
+});
+
+router.put('/:username', function(request, response){
+    student.updateStudent(request.params.username, request.body, function(err, result){
+        if(err){
+            response.send(err);
+        }else{
+            response.json(result);
+            console.log(result.affectedRows);
+        }
+    });
+});
+
+router.delete('/:username',function(request, response){
+    student.deleteStudent(request.params.username, function(err, result){
+        if(err){
+            response.send(err);
+        }else{
+            response.json(result);
+            console.log(result.affectedRows);
+        }
+    });
 });
 
 module.exports=router;
